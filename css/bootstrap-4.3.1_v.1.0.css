@@ -9,6 +9,27 @@
 /*Custom CSS*/
 .hero-img{
 	height: 100vh;
+	background: linear-gradient(0deg, rgba(44, 44, 44, 0.5), rgba(44, 44, 44, 0.5)), url("Imgs/journal.jpg"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    color: white;
+}
+
+.hero-img h1, .hero-img h3{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+.aboutMe{
+    padding-top: 25px;
+}
+
+.aboutMe:last-child{
+    padding-bottom: 15px;
+}
+
+.portfolio{
+    padding-top: 25px;
 }
 
 footer{
@@ -24,17 +45,6 @@ footer{
 	text-decoration: none;
 }
 
-.preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-}
-
-#home{
-	margin-top: 50px;
-}
-
 .animatedHover{
 	animation-play-state: paused;
 }
@@ -43,6 +53,87 @@ footer{
 	animation-play-state: running;
 }
 
+#proj1 {
+	background: linear-gradient(0deg, rgba(196, 196, 196, 0.45), rgba(196, 196, 196, 0.45)), url("../imgs/the_internet_background.jpg");
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+}
+
+#proj2 {
+	background: linear-gradient(0deg, rgba(196, 196, 196, 0.45), rgba(196, 196, 196, 0.45)), url("../imgs/cloud_technology_background.jpg");
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+}
+
+#proj3 {
+	background: linear-gradient(0deg, rgba(196, 196, 196, 0.45), rgba(196, 196, 196, 0.45)), url("../imgs/market_background.jpg");
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+}
+
+#proj4 {
+	background: linear-gradient(0deg, rgba(196, 196, 196, 0.45), rgba(196, 196, 196, 0.45)), url("../imgs/tandor_background.jpeg");
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+}
+
+#proj5 {
+	background: linear-gradient(0deg, rgba(196, 196, 196, 0.45), rgba(196, 196, 196, 0.45)), url("../imgs/esports_background.jpg");
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+}
+
+#proj1:hover {
+	background: url("../imgs/the_internet_background.jpg");
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+}
+
+#proj2:hover {
+	background: url("../imgs/cloud_technology_background.jpg");
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+}
+
+#proj3:hover {
+	background: url("../imgs/market_background.jpg");
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+}
+
+#proj4:hover {
+	background: url("../imgs/tandor_background.jpeg");
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+}
+
+#proj5:hover {
+	background: url("../imgs/esports_background.jpg");
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+}
+
+#Portfolio a:hover {
+	text-decoration: none;
+}
+
+#Portfolio {
+	padding-top: 125px;
+}
+
+#Portfolio .card-columns{
+	margin-top: 2%;
+}
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -3758,10 +3849,11 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: #FFFEFE;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
 }
 .card > hr {
   margin-right: 0;
@@ -3921,7 +4013,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   }
 }
 .card-columns .card {
-  margin-bottom: 0.75rem;
+  margin-bottom: 2.25rem;
 }
 @media (min-width: 576px) {
   .card-columns {
@@ -3936,6 +4028,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   }
   .card-columns .card {
     display: inline-block;
+    
     width: 100%;
   }
 }

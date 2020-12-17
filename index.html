@@ -11,7 +11,7 @@
 	<link href="animate.css/animate.css" rel="stylesheet">
     <style>
 		.hero-img{
-			background: linear-gradient(0deg, rgba(44, 44, 44, 0.5), rgba(44, 44, 44, 0.5)), url("Imgs/earth.jpg"); 
+			background: linear-gradient(0deg, rgba(44, 44, 44, 0.5), rgba(44, 44, 44, 0.5)), url("Imgs/journal.jpg"); 
 			background-position: center; 
 			background-repeat: no-repeat; 
 			background-size: cover;
@@ -20,160 +20,160 @@
 		.hero-img h1, .hero-img h3{
 			filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 		}
+		
+		.aboutMe{
+			padding-top: 25px;
+		}
+		
+		.aboutMe:last-child{
+			padding-bottom: 15px;
+		}
+		
+		.portfolio{
+			padding-top: 25px;
+		}
     </style>
 	
   </head>
   <body data-spy="scroll" data-target=".navbar">
   	<!-- Hero Image -->
-	<div id="home" class="hero-img">
-		<h3>Welcome to my</h3>
-		<h1>Portfolio</h1>
-		
-		<p>Learn about me</p>
-		<span class="animate__animated animatedHover animate__shakeY animate__slower animate__infinite"><img src="imgs/chevrons-down.svg" alt="chevrons-down"></span>
+	<div id="home" class="hero-img" style="height: 100vh">
+        <div class="d-flex flex-column container text-center justify-content-around" style="height: 100%">
+            <div class="row">
+                <div class="col-12">
+                    <h3>Welcome to my</h3>
+                    <h1>Portfolio</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12"><p>Learn about me</p></div>
+                <div class="col-12"><a href="#navbar"><span><img src="imgs/chevrons-down.svg" alt="chevrons-down" class="animate__animated animatedHover animate__shakeY animate__slower animate__infinite"></span></a></div>
+            </div>
+        </div>
     </div>
 	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">       
-      <ul class="navbar-nav mr-auto">
-         <li class="nav-item active">
+	<nav id="navbar" class="navbar navbar-expand-lg sticky-top navbar-light bg-light justify-content-center">       
+      <ul class="navbar-nav">
+         <li class="nav-item">
             <a class="nav-link" href="#Home">Home</a>
          </li>
          <li class="nav-item">
-            <a class="nav-link" href="#About">Link</a>
+            <a class="nav-link" href="#About">About</a>
          </li>
          <li class="nav-item">
-            <a class="navbar-brand" href="#Home">IT</a>
+            <a class="navbar-brand text-center" href="#Home">IT</a>
          </li>
          <li class="nav-item">
-            <a class="nav-link" href="#Portfolio">Link</a>
+            <a class="nav-link" href="#Portfolio">Portfolio</a>
          </li>
          <li class="nav-item">
-            <a class="nav-link" href="#Resume">Link</a>
+            <a class="nav-link" href="#Resume">Resume</a>
          </li>
       </ul>
     </nav>
 	<!-- About Me -->
     <div id="About" class="container-fluid">
-		<div class="row">
-			<div class="col-4">
-			<div class="row">
-				<img src="" alt="">
-			</div>
-			<div class="row">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-			</div>
+		<div class="row aboutMe text-white" style="background-color: #466060;">
+			<div class="col-xl-4">
+				<div class="row justify-content-center">
+					<!-- Clip image with a circle -->
+					<img src="imgs/ido.jpg" alt="Image of Ido Tanne" class="rounded-circle" width="450px">	
+				</div>
+				<div class="row justify-content-center aboutMe">
+					<div class="col-5">
+						<div class="row justify-content-between">
+							<img src="imgs/facebook-white.svg" alt="Facebook Icon" width="45px">
+							<img src="imgs/instagram-white.svg" alt="Instagram Icon" width="45px">
+							<img src="imgs/github-white.svg" alt="Github Icon" width="45px">
+						</div>
+					</div>
+				</div>
             </div>
-            <div class="col-8">
-                <h1>Hi I'm ido Tanne</h1>
-                <p1>My journey has been long and I still have much more to go, but it all started with my fascination of video games, which lead to me wanting to develop them, although I switched into wanting to code them, but now wanting a happy medium. Which I found to be font-end &#38; back-end webite development.</p1>
+            <div class="col-8 align-items-center d-flex flex-column justify-content-center">
+				<div class="row">
+					<div class="col-9">
+						<h1>Hi I'm ido Tanne</h1>
+                		<p>My journey has been long and I still have much more to go, but it all started with my fascination of video games, which lead to me wanting to develop them, although I switched into wanting to code them, but now wanting a happy medium. Which I found to be font-end &#38; back-end webite development.</p>
+					</div>
+					
+				</div>
             </div>
 		</div>
-		<div class="row">
-			<div class="card" style="width: 18rem;">
-			  <img class="card-img-top" src="..." alt="Card image cap">
-			  <div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				<a href="#" class="btn btn-primary">Go somewhere</a>
+		<div class="row justify-content-around aboutMe card-deck align-content-center">
+			<div class="card col-9 col-xl-3">
+			  <img class="card-img-top w-50 mx-auto d-block" src="imgs/grid-alt.svg" alt="Card image cap" height="15%">
+			  <div class="card-body text-center">
+                  <h1 class="card-title">Designer</h1>
+                  <p class="card-text">I appreciate the digital arts and the value they bring to people.</p>
+				  <h5 class="card-title">What I Design:</h5>
+				  <p class="card-text">UX, UI, Web, Logos</p>
+				  <h5 class="card-title">Applications I Use:</h5>
+				  <p class="card-text">Adobe Photoshop</p>
+				  <p class="card-text">Adobe Illustrator</p>
+				  <p class="card-text">Adobe XD</p>
+				  <p class="card-text">Figma</p>
 			  </div>
 			</div>
-			<div class="card" style="width: 18rem;">
-			  <img class="card-img-top" src="..." alt="Card image cap">
-			  <div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				<a href="#" class="btn btn-primary">Go somewhere</a>
+			<div class="card col-9 col-xl-3">
+			  <img class="card-img-top w-50 mx-auto d-block" src="imgs/code.svg" alt="Card image cap" height="15%">
+			  <div class="card-body text-center">
+                  <h1 class="card-title">Programmer</h1>
+                  <p class="card-text">From bits in a program to an image on the screen. That’s what I apprecate the most about programming.</p>
+				  <h5 class="card-title">What I Design:</h5>
+				  <p class="card-text">C#, Python, Java, C++</p>
+				  <h5 class="card-title">Applications I Use:</h5>
+				  <p class="card-text">Visual Studio Code</p>
+				  <p class="card-text">Eclipse</p>
 			  </div>
 			</div>
-			<div class="card" style="width: 18rem;">
-			  <img class="card-img-top" src="..." alt="Card image cap">
-			  <div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				<a href="#" class="btn btn-primary">Go somewhere</a>
+			<div class="card col-9 col-xl-3">
+			  <img class="card-img-top w-50 mx-auto d-block" src="imgs/code-alt.svg" alt="Card image cap" height="15%">
+			  <div class="card-body text-center">
+                  <h1 class="card-title">Front-end Developer</h1>
+                  <p class="card-text">I appreciate the digital arts and the value they bring to people.</p>
+				  <h5 class="card-title">What I Design:</h5>
+				  <p class="card-text">HTML, CSS, JS</p>
+				  <h5 class="card-title">Applications I Use:</h5>
+				  <p class="card-text">GitHub</p>
+				  <p class="card-text">Webstorm</p>
+				  <p class="card-text">Adobe Dreamweaver</p>
 			  </div>
-			</div>
 		</div>
 		
 	</div>
 	<!-- Portfolio Section -->
-	<div id="Portfolio" class="container-fluid">
-		<h1>My Portfolio</h1>
-		<div class="card" style="width: 18rem;">
-		  <div class="card-body">
-			<h5 class="card-title">Card title</h5>
-			<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			<a href="#" class="card-link">Card link</a>
-			<a href="#" class="card-link">Another link</a>
-		  </div>
+	<div id="Portfolio" class="container-fluid portfolio">
+		<h1 class="text-center">My Portfolio</h1>
+        <div class="card-columns">
+          <div id="proj1" class="card bg-light" style="height: 25vh;">
+            <a class="text-white text-center animate__animated animate__pulse animatedHover" href="">
+				<div class="card-body">
+                  <h1 class="card-text">The Internet</h1>
+				</div>
+            </a>
+          </div>
+          <div id="proj2" class="card bg-light" style="height: 25vh;">
+            <a class="text-white text-center animate__animated animate__pulse animatedHover" href=""><div class="card-body">
+              <h1 class="card-text">Cloud Technology</h1>
+            </div></a>
+          </div>
+          <div id="proj3" class="card bg-light" style="height: 25vh;">
+            <a class="text-white text-center animate__animated animate__pulse animatedHover" href=""><div class="card-body">
+              <h1 class="card-text">Online Marketing and Data Privacy</h1>
+            </div></a>
+          </div>
+		  <div id="proj4" class="card bg-light " style="height: 25vh;">
+            <a class="text-white text-center animate__animated animate__pulse animatedHover" href=""><div class="card-body">
+              <h1 class="card-text">Tandor Development</h1>
+            </div></a>
+          </div>
+          <div id="proj5" class="card bg-light d-flex" style="height: 25vh;">
+            <a class="text-white animate__animated animate__pulse animatedHover" href=""><div class="card-body">
+              <h1 class="card-text">NJIT Esports (Work in Progress)</h1>
+            </div></a>
+          </div>
+          
 		</div>
-		<div class="card" style="width: 18rem;">
-		  <div class="card-body">
-			<h5 class="card-title">Card title</h5>
-			<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			<a href="#" class="card-link">Card link</a>
-			<a href="#" class="card-link">Another link</a>
-		  </div>
-		</div>
-		<div class="card" style="width: 18rem;">
-		  <div class="card-body">
-			<h5 class="card-title">Card title</h5>
-			<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			<a href="#" class="card-link">Card link</a>
-			<a href="#" class="card-link">Another link</a>
-		  </div>
-		</div>
-		<div class="card" style="width: 18rem;">
-		  <div class="card-body">
-			<h5 class="card-title">Card title</h5>
-			<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			<a href="#" class="card-link">Card link</a>
-			<a href="#" class="card-link">Another link</a>
-		  </div>
-		</div>
-		<div class="card" style="width: 18rem;">
-		  <div class="card-body">
-			<h5 class="card-title">Card title</h5>
-			<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			<a href="#" class="card-link">Card link</a>
-			<a href="#" class="card-link">Another link</a>
-		  </div>
-		</div>
-		<div class="card" style="width: 18rem;">
-		  <div class="card-body">
-			<h5 class="card-title">Card title</h5>
-			<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			<a href="#" class="card-link">Card link</a>
-			<a href="#" class="card-link">Another link</a>
-		  </div>
-		</div>
-		<div class="card" style="width: 18rem;">
-		  <div class="card-body">
-			<h5 class="card-title">Card title</h5>
-			<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			<a href="#" class="card-link">Card link</a>
-			<a href="#" class="card-link">Another link</a>
-		  </div>
-		</div>
-		<div class="card" style="width: 18rem;">
-		  <div class="card-body">
-			<h5 class="card-title">Card title</h5>
-			<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			<a href="#" class="card-link">Card link</a>
-			<a href="#" class="card-link">Another link</a>
-		  </div>
-		</div>
-	
 	</div>
 	<!-- Resume Section -->
 	<div id="Resume" class="container-fluid">
@@ -237,14 +237,14 @@
 		  </div>
 		</div>
 		<div class="row">
-			<div class="col-12">
+			<div class="col-12 text-center">
 				<h1>Find out even more about me!</h1>
 			</div>
-			<div class="col-6">
+			<div class="col-6 text-center">
 				<h1>Print Out</h1>
 				<img src="" alt="">
 			</div>
-			<div class="col-6">
+			<div class="col-6 text-center">
 				<h1>LinkedIn</h1>
 				<img src="" alt="">
 			</div>
