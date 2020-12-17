@@ -9,7 +9,7 @@
 /*Custom CSS*/
 .hero-img{
 	height: 100vh;
-	background: linear-gradient(0deg, rgba(44, 44, 44, 0.5), rgba(44, 44, 44, 0.5)), url("Imgs/journal.jpg"); 
+	background: linear-gradient(0deg, rgba(44, 44, 44, 0.5), rgba(44, 44, 44, 0.5)), url("../imgs/journal.jpg"); 
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
@@ -58,6 +58,7 @@ footer{
 	background-position: center; 
 	background-repeat: no-repeat; 
 	background-size: cover;
+	filter: grayscale(100%);
 }
 
 #proj2 {
@@ -65,6 +66,7 @@ footer{
 	background-position: center; 
 	background-repeat: no-repeat; 
 	background-size: cover;
+	filter: grayscale(100%);
 }
 
 #proj3 {
@@ -72,6 +74,7 @@ footer{
 	background-position: center; 
 	background-repeat: no-repeat; 
 	background-size: cover;
+	filter: grayscale(100%);
 }
 
 #proj4 {
@@ -79,6 +82,7 @@ footer{
 	background-position: center; 
 	background-repeat: no-repeat; 
 	background-size: cover;
+	filter: grayscale(100%);
 }
 
 #proj5 {
@@ -86,6 +90,7 @@ footer{
 	background-position: center; 
 	background-repeat: no-repeat; 
 	background-size: cover;
+	filter: grayscale(100%);
 }
 
 #proj1:hover {
@@ -93,6 +98,7 @@ footer{
 	background-position: center; 
 	background-repeat: no-repeat; 
 	background-size: cover;
+	filter: grayscale(0%);
 }
 
 #proj2:hover {
@@ -100,6 +106,7 @@ footer{
 	background-position: center; 
 	background-repeat: no-repeat; 
 	background-size: cover;
+	filter: grayscale(0%);
 }
 
 #proj3:hover {
@@ -107,6 +114,7 @@ footer{
 	background-position: center; 
 	background-repeat: no-repeat; 
 	background-size: cover;
+	filter: grayscale(0%);
 }
 
 #proj4:hover {
@@ -114,6 +122,7 @@ footer{
 	background-position: center; 
 	background-repeat: no-repeat; 
 	background-size: cover;
+	filter: grayscale(0%);
 }
 
 #proj5:hover {
@@ -121,6 +130,7 @@ footer{
 	background-position: center; 
 	background-repeat: no-repeat; 
 	background-size: cover;
+	filter: grayscale(0%);
 }
 
 #Portfolio a:hover {
@@ -133,6 +143,27 @@ footer{
 
 #Portfolio .card-columns{
 	margin-top: 2%;
+}
+
+#Portfolio .card{
+	border: none;
+}
+
+#Portfolio .card-columns h1{
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+#ResumeLinks{
+	background: #466060;
+	color: #c2c5bb;
+}
+
+.resumePic{
+	margin: 5%;
+}
+
+.resumeLinksHeader{
+	margin: 1% 0;
 }
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -4019,7 +4050,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   .card-columns {
     -webkit-column-count: 3;
     -moz-column-count: 3;
-    column-count: 3;
+    column-count: 5;
     -webkit-column-gap: 1.25rem;
     -moz-column-gap: 1.25rem;
     column-gap: 1.25rem;
