@@ -1,5 +1,5 @@
-# IS117-The-Internet
-Final Project for IS117 (Fall 2020)
+# Personal Portfolio
+Portfolio for myself of all my projects
 
 By Ido Tanne
 
